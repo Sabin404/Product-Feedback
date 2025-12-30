@@ -1,9 +1,21 @@
+import { useDispatch, useSelector } from 'react-redux'
 import FeedbackList from '../components/FeedbackList'
 import FeedbackModel from '../components/FeedbackModel'
 import Sidebar from '../components/Sidebar'
 import React from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
+const dispatch = useDispatch();
+const navigate= useNavigate()
+const location = useLocation();
+
+//Redux
+
+const suggestions= useSelector((state)=>state.feedback.suggestion)
+console.log(suggestions);
+
+
   return (
     <div className='max-w-6l ax-auto'>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -26,7 +38,7 @@ const HomePage = () => {
           <FeedbackList/>
         </div>
       </div>
-      <FeedbackModel/>
+      {/* <FeedbackModel/> */}
     </div>
   )
 }

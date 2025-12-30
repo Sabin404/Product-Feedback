@@ -21,14 +21,14 @@ const Sidebar = () => {
 
         <div className='flex justify-between items-center'>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-purple-400"></div>
+            <div className="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></div>
             <span className="text-gray-600 text-sm">In-progress</span>
           </div>
           <span className="font-bold text-gray-600">10</span>
         </div>
         <div className='flex justify-between items-center'>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+            <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse delay-100"></div>
             <span className="text-gray-600 text-sm">Live</span>
           </div>
           <span className="font-bold text-gray-600">10</span>
