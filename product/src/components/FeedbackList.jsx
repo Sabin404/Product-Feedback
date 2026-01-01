@@ -1,7 +1,12 @@
 import React from 'react'
 import FeedbackItem from './FeedbackItem'
 
-const FeedbackList = () => {
+const FeedbackList = ({
+  suggestion,
+  filterCategory,
+  sortBy,
+  handleView
+}) => {
 
   //conditional Rendering
   // return (
@@ -10,9 +15,9 @@ const FeedbackList = () => {
   //   </div>
   // )
 
-  return(
+  return (
     <div className="space-y-4">
-      <FeedbackItem/>
+      <FeedbackItem />
     </div>
   )
 }

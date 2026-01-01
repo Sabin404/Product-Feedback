@@ -1,6 +1,13 @@
 import React from 'react'
+const categories=["All","UI","UX","Enhancement","Bug","Feature"]
 
-const Sidebar = () => {
+const Sidebar = ({
+  filterCategory,
+  setFilterCateogry,
+  roadmapCounts,
+  openRoadmap,
+  openAdd
+}) => {
   return (
     <div className='lg:col-span-1 space-y-6'>
       <div className="bg-gray-800 rounded-xl p-6 text-white">
@@ -9,33 +16,54 @@ const Sidebar = () => {
       </div>
       <div className='bg-white rounded-xl p-8 shadow-md'>
         <div className='flex flex-wrap gap-2'>
-          <button className={`p-4 py-2 rounded-lg text-sm font-semibold transition-all `}>Categories</button>
+          {
+            categories.map((cat)=>(
+              <button className={`p-4 
+              py-2 rounded-lg text-sm font-semibold 
+              transition-all
+              ${filterCategory===cat? "bg-blue-600 text-white ":"bg-blue-50 text-blue-600 hover:bg-blue-100"}
+               `}
+               onClick={()=>setFilterCateogry(cat)}
+               >{cat}</button>
+            ))
+          }
         </div>
       </div>
 
-      <div className=' bg-white rounded-xk p-6 shadow-md'>
+      <div className=' bg-white rounded-xl p-6 shadow-md'>
         <div className='flex justify-between items-center mb-4'>
           <h2 className='font-bold text-gray-800'>Roadmap</h2>
-          <button className='text-blue-699 text-sm font-semibold hover:underline'>view</button>
+          <button className='text-blue-699 text-sm font-semibold hover:underline'
+          onClick={openRoadmap}
+          >view</button>
         </div>
 
         <div className='flex justify-between items-center'>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></div>
-            <span className="text-gray-600 text-sm">In-progress</span>
+            <span className="text-gray-600 text-sm">Planned</span>
           </div>
-          <span className="font-bold text-gray-600">10</span>
+          <span className="font-bold text-gray-600">{roadmapCounts.Planned}</span>
+        </div>
+        <div className='flex justify-between items-center'>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse delay-100"></div>
+            <span className="text-gray-600 text-sm">In-Progress</span>
+          </div>
+          <span className="font-bold text-gray-600">{roadmapCounts.inProgress}</span>
         </div>
         <div className='flex justify-between items-center'>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse delay-100"></div>
             <span className="text-gray-600 text-sm">Live</span>
           </div>
-          <span className="font-bold text-gray-600">10</span>
+          <span className="font-bold text-gray-600">{roadmapCounts.Live}</span>
         </div>
 
         <div className='mt-4'>
-          <button className='w-full bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all'>
+          <button 
+          onClick={openAdd}
+          className='w-full bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all'>
             + Add feedback
           </button>
         </div>

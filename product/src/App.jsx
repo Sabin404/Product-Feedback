@@ -13,8 +13,13 @@ function App() {
       <main>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/detail' element={<DetailPage/>}/>
+        <Route path='/feedback/:id' element={<DetailPage/>}/>
+        <Route path='/feedback/:id/edit' element={<DetailPage/>}/>
+
+        {/* same page shows edit model  */}
         <Route path='/roadmap' element={<RoadmapPage/>}/>
+        <Route path='/add' element={<HomePage/>}/>
+        <Route path='*' element={<HomePage/>}/>
       </Routes>
         
       </main>

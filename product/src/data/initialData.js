@@ -7,7 +7,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 18,
     "category": "UI",
-    "status": "open"
+    "status": "Planned"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 12,
     "category": "Feature",
-    "status": "in-progress"
+    "status": "In-Progress"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 25,
     "category": "User",
-    "status": "completed"
+    "status": "Live"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 9,
     "category": "Performance",
-    "status": "open"
+    "status": "Live"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 30,
     "category": "Security",
-    "status": "in-progress"
+    "status": "In-Progress"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 21,
     "category": "UI",
-    "status": "completed"
+    "status": "Live"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 7,
     "category": "Feature",
-    "status": "open"
+    "status": "Live"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 14,
     "category": "Bug",
-    "status": "completed"
+    "status": "Planned"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 6,
     "category": "Security",
-    "status": "open"
+    "status": "Live"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 11,
     "category": "User",
-    "status": "in-progress"
+    "status": "In-Progress"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 19,
     "category": "Feature",
-    "status": "completed"
+    "status": "Live"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 27,
     "category": "Admin",
-    "status": "in-progress"
+    "status": "In-Progress"
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 8,
     "category": "UI",
-    "status": "open"
+    "status": "Planned"
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 35,
     "category": "Feature",
-    "status": "open"
+    "status": "Planned"
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 20,
     "category": "Performance",
-    "status": "completed"
+    "status": "Live"
   },
   {
     "id": 16,
@@ -157,7 +157,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 13,
     "category": "User",
-    "status": "in-progress"
+    "status": "In-Progress"
   },
   {
     "id": 17,
@@ -167,7 +167,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 16,
     "category": "Feature",
-    "status": "open"
+    "status": "Planned"
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 22,
     "category": "Accessibility",
-    "status": "in-progress"
+    "status": "In-Progress"
   },
   {
     "id": 19,
@@ -187,7 +187,7 @@ export const initialSuggestion =[
     "upvoted": true,
     "comment": 28,
     "category": "Performance",
-    "status": "open"
+    "status": "Live"
   },
   {
     "id": 20,
@@ -197,7 +197,7 @@ export const initialSuggestion =[
     "upvoted": false,
     "comment": 15,
     "category": "User",
-    "status": "completed"
+    "status": "Live"
   }
 ]
 
