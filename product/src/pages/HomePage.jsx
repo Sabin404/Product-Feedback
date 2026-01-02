@@ -31,7 +31,7 @@ const HomePage = () => {
   const closeModel = () => navigate(-1) // back to previous
 
   const handleAdd = (payload) => {
-    dispatch(addSuggestion)
+    dispatch(addSuggestion(payload))
     closeModel()
   }
 
@@ -58,9 +58,9 @@ const HomePage = () => {
               <span className='text-white font-bold'>{suggestions.length} Suggestion{" "}</span>
               <div className='flex items-center gap-2'>
                 <select name=""
-                value={sortBy}
-                onClick={(e)=>setSortBy(e.target.value)}
-                 id="" className='bg-transparent text-gray-400 text-sm border-none cursor-pointer'>
+                  value={sortBy}
+                  onClick={(e) => setSortBy(e.target.value)}
+                  id="" className='bg-transparent text-gray-400 text-sm border-none cursor-pointer'>
                   <option value="Most Upvotes">Most Upvotes</option>
                   <option value="Least Upvotes">Least Upvotes</option>
                   <option value="Most comments">Most Comment</option>
@@ -68,12 +68,23 @@ const HomePage = () => {
                 </select>
               </div>
             </div>
-            <button className='bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all whitespace-normal'>+ Add Feedback</button>
+            <button className='bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all whitespace-normal'
+              onClick={openAdd}
+            >+ Add Feedback</button>
           </div>
-          <FeedbackList />
+          <FeedbackList
+            suggestion={suggestions}
+            filterCategory={filterCategory}
+            sortBy={sortBy}
+            handleUpvotes={handleUpvotes}
+            handleView={handleView} />
         </div>
       </div>
-      {/* <FeedbackModel/> */}
+      <FeedbackModel 
+      isOpen={modelOpen}
+       onClose={closeModel}
+        onAdd={handleAdd} 
+        editingFeedback={null}/>
     </div>
   )
 }

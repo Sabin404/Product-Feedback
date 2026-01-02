@@ -198,80 +198,85 @@ export const initialSuggestion =[
     "comment": 15,
     "category": "User",
     "status": "Live"
+  },
+  {
+    "id": 21,
+    "title": "User blocking feature",
+    "description": "Allow users to block others",
+    "upvotes": 211,
+    "upvoted": false,
+    "comment": 15,
+    "category": "User",
+    "status": "Live"
   }
 ]
 
-export const initialComments=[
-  [
-  {
-    "id": 1,
-    "name": "John Doe",
-    "username": "johnd",
-    "avatar": "https://i.pravatar.cc/150?img=1",
-    "text": "This feature would be really helpful for daily users."
-  },
-  {
-    "id": 2,
-    "name": "Sarah Smith",
-    "username": "sarah_s",
-    "avatar": "https://i.pravatar.cc/150?img=2",
-    "text": "I like the idea, especially the UI improvements."
-  },
-  {
-    "id": 3,
-    "name": "Michael Brown",
-    "username": "mikeb",
-    "avatar": "https://i.pravatar.cc/150?img=3",
-    "text": "Performance should be the top priority in my opinion."
-  },
-  {
-    "id": 4,
-    "name": "Emily Johnson",
-    "username": "emilyj",
-    "avatar": "https://i.pravatar.cc/150?img=4",
-    "text": "Dark mode is a must-have feature nowadays."
-  },
-  {
-    "id": 5,
-    "name": "David Wilson",
-    "username": "davidw",
-    "avatar": "https://i.pravatar.cc/150?img=5",
-    "text": "Security updates like 2FA are very important."
-  },
-  {
-    "id": 6,
-    "name": "Olivia Taylor",
-    "username": "oliviat",
-    "avatar": "https://i.pravatar.cc/150?img=6",
-    "text": "Localization will help reach more users globally."
-  },
-  {
-    "id": 7,
-    "name": "Daniel Martinez",
-    "username": "danielm",
-    "avatar": "https://i.pravatar.cc/150?img=7",
-    "text": "Real-time updates would make the app feel modern."
-  },
-  {
-    "id": 8,
-    "name": "Sophia Anderson",
-    "username": "sophia_a",
-    "avatar": "https://i.pravatar.cc/150?img=8",
-    "text": "Mobile responsiveness should not be ignored."
-  },
-  {
-    "id": 9,
-    "name": "James Lee",
-    "username": "jamesl",
-    "avatar": "https://i.pravatar.cc/150?img=9",
-    "text": "Exporting data is useful for advanced users."
-  },
-  {
-    "id": 10,
-    "name": "Isabella Clark",
-    "username": "isabellac",
-    "avatar": "https://i.pravatar.cc/150?img=10",
-    "text": "Accessibility improvements will benefit everyone."
-  }
-]
-]
+export const initialComments = {
+  1: [
+    { id: 1, name: "John Doe", username: "johnd", avatar: "https://i.pravatar.cc/150?img=1", text: "This feature would be really helpful for daily users." },
+    { id: 2, name: "Sarah Smith", username: "sarah_s", avatar: "https://i.pravatar.cc/150?img=2", text: "I like the idea, especially the UI improvements." }
+  ],
+  2: [
+    { id: 3, name: "Michael Brown", username: "mikeb", avatar: "https://i.pravatar.cc/150?img=3", text: "Performance should be the top priority in my opinion." }
+  ],
+  3: [
+    { id: 4, name: "Emily Johnson", username: "emilyj", avatar: "https://i.pravatar.cc/150?img=4", text: "Dark mode is a must-have feature nowadays." },
+    { id: 5, name: "David Wilson", username: "davidw", avatar: "https://i.pravatar.cc/150?img=5", text: "Security updates like 2FA are very important." }
+  ],
+  4: [
+    { id: 6, name: "Olivia Taylor", username: "oliviat", avatar: "https://i.pravatar.cc/150?img=6", text: "Search optimization would improve user experience a lot." }
+  ],
+  5: [
+    { id: 7, name: "Daniel Martinez", username: "danielm", avatar: "https://i.pravatar.cc/150?img=7", text: "2FA is essential for security." }
+  ],
+  6: [
+    { id: 8, name: "Sophia Anderson", username: "sophia_a", avatar: "https://i.pravatar.cc/150?img=8", text: "Mobile responsiveness is critical for users." }
+  ],
+  7: [
+    { id: 9, name: "James Lee", username: "jamesl", avatar: "https://i.pravatar.cc/150?img=9", text: "Exporting data will be very useful for advanced users." }
+  ],
+  8: [
+    { id: 10, name: "Isabella Clark", username: "isabellac", avatar: "https://i.pravatar.cc/150?img=10", text: "Login issue fix is urgent." }
+  ],
+  9: [
+    { id: 11, name: "John Doe", username: "johnd", avatar: "https://i.pravatar.cc/150?img=1", text: "Password strength meter is a great idea." }
+  ],
+  10: [
+    { id: 12, name: "Sarah Smith", username: "sarah_s", avatar: "https://i.pravatar.cc/150?img=2", text: "User activity logs help with tracking." }
+  ],
+  11: [
+    { id: 13, name: "Michael Brown", username: "mikeb", avatar: "https://i.pravatar.cc/150?img=3", text: "Comment edit option is long overdue." }
+  ],
+  12: [
+    { id: 14, name: "Emily Johnson", username: "emilyj", avatar: "https://i.pravatar.cc/150?img=4", text: "Admin dashboard will improve analytics a lot." }
+  ],
+  13: [
+    { id: 15, name: "Olivia Taylor", username: "oliviat", avatar: "https://i.pravatar.cc/150?img=6", text: "Notification bell icon is a nice UX improvement." }
+  ],
+  14: [
+    { id: 16, name: "Daniel Martinez", username: "danielm", avatar: "https://i.pravatar.cc/150?img=7", text: "Localization is important for global users." }
+  ],
+  15: [
+    { id: 17, name: "Sophia Anderson", username: "sophia_a", avatar: "https://i.pravatar.cc/150?img=8", text: "Faster page load will improve engagement." }
+  ],
+  16: [
+    { id: 18, name: "James Lee", username: "jamesl", avatar: "https://i.pravatar.cc/150?img=9", text: "Delete account option is necessary for privacy." }
+  ],
+  17: [
+    { id: 19, name: "Isabella Clark", username: "isabellac", avatar: "https://i.pravatar.cc/150?img=10", text: "Pinned posts will help highlight important content." }
+  ],
+  18: [
+    { id: 20, name: "John Doe", username: "johnd", avatar: "https://i.pravatar.cc/150?img=1", text: "Accessibility improvements are very welcome." }
+  ],
+  19: [
+    { id: 21, name: "Sarah Smith", username: "sarah_s", avatar: "https://i.pravatar.cc/150?img=2", text: "Real-time updates are critical for modern apps." }
+  ],
+  20: [
+    { id: 22, name: "Michael Brown", username: "mikeb", avatar: "https://i.pravatar.cc/150?img=3", text: "User blocking feature is useful for privacy." }
+  ],
+  21: [
+    { id: 23, name: "Emily Johnson", username: "emilyj", avatar: "https://i.pravatar.cc/150?img=4", text: "User blocking feature should be easy to access." }
+  ]
+};
+
+
